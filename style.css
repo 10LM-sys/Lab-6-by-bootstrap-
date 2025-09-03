@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --hello-new-var: solid black;
+}
+
+.container {
+  padding: 40px;
+  border: var(--hello-new-var);
+  text-align: center;
+  width: 500px;
+}
+
+.fan-image {
+  transition: all 0.2s ease;
+  animation: spin-fan 2s infinite;
+}
+
+@keyframes spin-fan {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
